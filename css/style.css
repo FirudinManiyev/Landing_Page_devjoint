@@ -1,1 +1,197 @@
-/* Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f8f9fa;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================
+   MOBILE FIRST
+========================= */
+
+header {
+    background: #0d6efd;
+    color: white;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Hero */
+
+#ana-sehife {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#ana-sehife a {
+    background: #0d6efd;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+
+/* Services */
+
+#xidmetler {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#xidmetler article {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+/* About */
+
+#haqqimizda {
+    text-align: center;
+}
+
+/* Contact */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background: #0d6efd;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Footer */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width:768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    #xidmetler {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        max-width: 650px;
+        margin: auto;
+    }
+
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width:1024px) {
+
+    section {
+        padding: 80px 120px;
+    }
+
+    #ana-sehife {
+        min-height: 80vh;
+        justify-content: center;
+    }
+
+    #xidmetler {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #haqqimizda {
+        max-width: 900px;
+        margin: auto;
+    }
+
+}
