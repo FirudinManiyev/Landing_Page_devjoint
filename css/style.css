@@ -260,3 +260,46 @@ footer {
     color: #198754;
     font-weight: bold;
 }
+
+/* ==========================
+   Accessibility
+========================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+
+    outline: 3px solid #ffbf00;
+    outline-offset: 3px;
+
+}
+
+/* Daha yüksək kontrast */
+
+body {
+    color: #212529;
+    background: #ffffff;
+}
+
+header {
+    background: #0b5ed7;
+}
+
+footer {
+    background: #212529;
+    color: #ffffff;
+}
+
+button {
+
+    background: #0b5ed7;
+    color: #ffffff;
+
+}
+
+button:hover {
+
+    background: #084298;
+
+}
