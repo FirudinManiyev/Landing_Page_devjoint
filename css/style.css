@@ -195,3 +195,41 @@ footer {
     }
 
 }
+
+/* ========================
+   Mobile Menu
+========================= */
+
+.menu-toggle{
+    display:block;
+    background:none;
+    border:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+#navMenu{
+    display:none;
+}
+
+#navMenu.active{
+    display:flex;
+    flex-direction:column;
+}
+
+/* Tablet və Desktop */
+
+@media (min-width:768px){
+
+    .menu-toggle{
+        display:none;
+    }
+
+    #navMenu{
+        display:flex !important;
+        flex-direction:row;
+        gap:20px;
+    }
+
+}
