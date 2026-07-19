@@ -1,14 +1,109 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firudin Maniyev</title>
+    <title>Firudin Landing Page</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Responsive Landing Page</h1>
+
+    <!-- Header -->
+    <header>
+        <nav aria-label="Əsas naviqasiya">
+            <a href="#ana-sehife">Logo</a>
+
+            <ul>
+                <li><a href="#ana-sehife">Ana səhifə</a></li>
+                <li><a href="#xidmetler">Xidmətlər</a></li>
+                <li><a href="#haqqimizda">Haqqımızda</a></li>
+                <li><a href="#elaqe">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero -->
+        <section id="ana-sehife">
+            <h1>Müasir və Responsiv Veb Saytlar Hazırlayırıq</h1>
+
+            <p>
+                HTML, CSS və JavaScript texnologiyalarından istifadə edərək
+                sürətli, responsiv və istifadəçi dostu veb həllər təqdim edirik.
+            </p>
+
+            <a href="#elaqe">Bizimlə Əlaqə</a>
+        </section>
+
+        <!-- Services -->
+        <section id="xidmetler">
+            <h2>Xidmətlərimiz</h2>
+
+            <article>
+                <h3>Responsiv Dizayn</h3>
+                <p>Bütün cihazlarda düzgün görünən müasir interfeyslər hazırlayırıq.</p>
+            </article>
+
+            <article>
+                <h3>Veb İnkişafı</h3>
+                <p>Müasir texnologiyalar ilə sürətli və təhlükəsiz saytlar hazırlayırıq.</p>
+            </article>
+
+            <article>
+                <h3>Texniki Dəstək</h3>
+                <p>Layihənizin inkişafı və texniki dəstəyi üçün həllər təqdim edirik.</p>
+            </article>
+        </section>
+
+        <!-- About -->
+        <section id="haqqimizda">
+            <h2>Haqqımızda</h2>
+
+            <p>
+                Komandamız müasir standartlara uyğun, əlçatan və istifadəçi yönümlü
+                veb layihələrin hazırlanması ilə məşğuldur. Məqsədimiz keyfiyyətli
+                və funksional həllər təqdim etməkdir.
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="elaqe">
+            <h2>Əlaqə</h2>
+
+            <form>
+
+                <label for="fullname">Ad və Soyad</label>
+                <input type="text" id="fullname" name="fullname">
+
+                <label for="email">Elektron poçt</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Mesaj</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <button type="submit">
+                    Göndər
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Responsiv Landing Page. Bütün hüquqlar qorunur.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
+```
