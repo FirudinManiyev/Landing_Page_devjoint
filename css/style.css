@@ -200,36 +200,63 @@ footer {
    Mobile Menu
 ========================= */
 
-.menu-toggle{
-    display:block;
-    background:none;
-    border:none;
-    color:white;
-    font-size:28px;
-    cursor:pointer;
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
 }
 
-#navMenu{
-    display:none;
+#navMenu {
+    display: none;
 }
 
-#navMenu.active{
-    display:flex;
-    flex-direction:column;
+#navMenu.active {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Tablet və Desktop */
 
-@media (min-width:768px){
+@media (min-width:768px) {
 
-    .menu-toggle{
-        display:none;
+    .menu-toggle {
+        display: none;
     }
 
-    #navMenu{
-        display:flex !important;
-        flex-direction:row;
-        gap:20px;
+    #navMenu {
+        display: flex !important;
+        flex-direction: row;
+        gap: 20px;
     }
 
+}
+
+/* ========================= Form Validation ========================= */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.input-error {
+    border: 2px solid #dc3545;
+}
+
+.input-success {
+    border: 2px solid #198754;
+}
+
+#successMessage {
+    margin-top: 20px;
+    color: #198754;
+    font-weight: bold;
 }

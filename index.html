@@ -81,24 +81,18 @@
         </section>
 
         <!-- Contact -->
+
         <section id="elaqe">
             <h2>Əlaqə</h2>
-
-            <form>
-
-                <label for="fullname">Ad və Soyad</label>
-                <input type="text" id="fullname" name="fullname">
-
-                <label for="email">Elektron poçt</label>
-                <input type="email" id="email" name="email">
-
-                <label for="message">Mesaj</label>
-                <textarea id="message" name="message" rows="5"></textarea>
-
-                <button type="submit">
-                    Göndər
-                </button>
-
+            <form id="contactForm" novalidate>
+                <div class="form-group"> <label for="fullname">Ad və Soyad</label> <input type="text" id="fullname"
+                        name="fullname"> <small class="error" id="nameError"></small> </div>
+                <div class="form-group"> <label for="email">Elektron poçt</label> <input type="email" id="email"
+                        name="email"> <small class="error" id="emailError"></small> </div>
+                <div class="form-group"> <label for="message">Mesaj</label> <textarea id="message" name="message"
+                        rows="5"></textarea> <small class="error" id="messageError"></small> </div> <button
+                    type="submit"> Göndər </button>
+                <p id="successMessage"></p>
             </form>
         </section>
 
